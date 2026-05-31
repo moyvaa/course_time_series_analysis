@@ -152,7 +152,7 @@ print("Корреляции с PM2.5:\n", corr['PM2.5'].drop('PM2.5').sort_value
 print("ЭТАП 6:")
 print("Температура и точка росы сильно коррелируют (>0.8). Мультиколлинеарность.")
 
-#7
+# 7
 ts = df[target].loc['2013-01-01':'2013-12-31'].asfreq('h')
 ts.interpolate(method='linear', inplace=True)
 
